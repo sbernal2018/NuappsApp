@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!---  Copyright (c) 2017 Copyright Holder All Rights Reserved.--->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+    <script>
+      var config = {
+        apiKey: "AIzaSyDzL42D900LFAd_rToS1FpcPET3xtdn2cw",
+        authDomain: "nuapps-23ee7.firebaseapp.com",
+        databaseURL: "https://nuapps-23ee7.firebaseio.com",
+        projectId: "nuapps-23ee7",
+        storageBucket: "nuapps-23ee7.appspot.com",
+        messagingSenderId: "494660960286"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+
+  <div class="input-group">
+      <label class="input-group-btn">
+                    <span class="btn btn-primary">
+                        Browse&hellip; <input  id="file" type="file" style="display: none;" multiple>
+                    </span>
+      </label>
+      <input type="text" class="form-control" readonly>
+  </div>
+  <span class="help-block">
+                Try selecting one or more files and watch the feedback
+            </span>
+    <button onclick="sendoff()">Submit</button>
+    <p id="size">Size:</p>
+    <script>
+
+            var width,height;
+    $("#file").change(function(e) {
+    var filea, img;
+
+
+    if (filea = this.files[0]) {
+        img = new Image();
+        img.onload = function() {
+            console.log(this.width+" "+this.height);
+
+            document.getElementById('size').innerHTML =  "Size: "+this.width+" ,"+this.height;
+        };
+        img.onerror = function() {
+            alert( "not a valid file: " + file.type);
+        };
+
+        img.src = window.URL.createObjectURL( filea );
+
+
+
+    }
+
+});
+
+    var database = firebase.database();
+    var storage = firebase.storage();
+    var storageRef =firebase.storage().ref();
+    function sendoff(){
+    var a = database.ref("List");
+    var file  =document.getElementById('file').files[0];
+    var imagesRef = firebase.storage().ref().child(makeid()+".png");
+
+
+    imagesRef.put(file).then(function(snapshot) {
+      console.log('Uploaded a blob or file!');
+        imagesRef.getDownloadURL().then(function(url) {
+          a.on('value', function(snapshot) {
+              console.log(snapshot.val());
+              var imgarray= snapshot.val();
+              console.log(imgarray);
+              var newimagearray = imgarray.push(url);
+              console.log(newimagearray)
+          a.set(newimagearray);
+        });
+
+      });
+
+    });
+    }
+    function makeid() {
+      var text = "";
+      var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      for (var i = 0; i < 5; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+      return text;
+    }
+  </script>
+  </body>
+</html>

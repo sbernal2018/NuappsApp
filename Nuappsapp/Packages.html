@@ -1,0 +1,729 @@
+<!--packages-->
+<html>
+<head>
+
+      <meta charset="utf-8">
+      <title>Nuapps</title>
+        <meta name="description" content="Virtual Enterprises Only Mobile App Development Company" />
+    <meta name="keywords" content="nuapps,nüapp,mobile,market,app,company,client,develop,employee,year,increase,advertise,advertisement,growth,revenue,new,product,application,team" />
+    <meta name="author" content="metatags generator">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 month">
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="shortcut icon" href="icoicon.ico" />
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+          <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400" rel="stylesheet">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+         <script src="https://use.fontawesome.com/d4610f059e.js"></script>
+          <script>
+
+             var md=false;
+            var lg=false;var sm=false;
+            var m=false;
+            var vm =false;
+            var app=false;
+            var total=0;
+          function start(){
+
+
+            $(".pageHead").attr('style','max-width:'+$(window).width()+'px;height:'+$(window).height() +'px;');
+            $(".store").attr('style','max-width:'+$(window).width()+'px;height:'+$(window).height() +'px;');
+
+               $("#mead").addClass("circle");
+               $('#lgad').addClass("circle");
+               $('#m').addClass("circle");
+               $('#app').addClass("circle");
+               $('smad').addClass("circle");
+
+             $('#total').html("$"+total);
+             console.log("total: "+total+ " "+  $('#total'));
+          console.log("width:"+$(window).width()+ "height:"+$(window).height());
+          $('#mead').click( function() {
+
+
+            if(!md){
+              $('#mead').removeClass();
+             $("#mead").addClass("invertedcircle");
+             total+=30000;
+                       $('#total').html("$"+total);
+               md=true;
+            }else{
+               $('#mead').removeClass();
+             $("#mead").addClass("circle");
+               total-=30000;
+             $('#total').html("$"+total);
+            md=false;
+            }
+
+          });
+            $('#lgad').click( function() {
+
+             if(!lg){
+              $('#lgad').removeClass();
+             $("#lgad").addClass("invertedcircle");
+               total+=50000;
+                      $('#total').html("$"+total);
+               lg=true;
+            }else{
+               $('#lgad').removeClass();
+             $("#lgad").addClass("circle");
+              total-=50000;
+                    $('#total').html("$"+total);
+            lg=false;
+            }
+
+          });
+           $('#m').click( function() {
+
+
+             if(!m){
+              $('#m').removeClass();
+             $("#m").addClass("invertedcircle");
+              total+=30000;
+              $('#total').html("$"+total);
+               m=true;
+            }else{
+               $('#m').removeClass();
+             $("#m").addClass("circle");
+              total-=30000;
+              $('#total').html("$"+total);
+            m=false;
+            }
+
+          });
+           $('#smad').click( function() {
+
+             if(!sm){
+              $('#smad').removeClass();
+             $("#smad").addClass("invertedcircle");
+             total+=15000;
+             $('#total').html("$"+total);
+               sm=true;
+            }else{
+               $('#smad').removeClass();
+             $("#smad").addClass("circle");
+             total-=15000;
+             $('#total').html("$"+total);
+            sm=false;
+            }
+          });
+           $('#app').click( function() {
+
+
+             if(!app){
+              $('#app').removeClass();
+             $("#app").addClass("invertedcircle");
+             total+=150000;
+             $('#total').html("$"+total);
+
+               app=true;
+            }else{
+               $('#app').removeClass();
+             $("#app").addClass("circle");
+             total-=150000;
+             $('#total').html("$"+total);
+            app=false;
+
+            }
+          });
+        }
+         function gotothings(){
+              if(md){
+                window.open('https://portal.veinternational.org/buybuttons/us01102/btn/medium-advertisment-006/');
+              if(lg){
+                window.open('https://portal.veinternational.org/buybuttons/us01102/btn/large-advertisment-005/');
+              }
+              if(sm){
+                window.open('https://portal.veinternational.org/buybuttons/us01102/btn/small-advertisment-007/');
+              }
+              if(m){
+                window.open('https://portal.veinternational.org/buybuttons/us01102/btn/maintenance-009/');
+              }
+              if(app){
+                console.log("good");
+                window.open('https://portal.veinternational.org/buybuttons/us01102/btn/custom-application-001/');
+              }else{
+                console.log("bad");
+              }
+            }
+            }
+         function myhref(web){
+        window.location.href = web;}
+          $(window).resize(function() {
+          start();
+          });
+
+          function darken(elem){
+            console.log("hello");
+             elem.addClass('invertedcircle');
+          }
+        </script>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+      @font-face {
+        src: url('segoeuil.tff') format('truetype');
+        font-family: 'mainFont';
+      }
+      @font-face {
+    src: url('segoeuil.ttf') format('truetype');
+      font-family: 'mainFont';
+    	font-weight: lighter;
+        }
+      input[type=text], textarea {
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        padding: 3px 0px 3px 3px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid #DDDDDD;
+      }
+
+      input[type=text]:focus, textarea:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        padding: 3px 0px 3px 3px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid rgba(81, 203, 238, 1);
+      }
+          .mission{
+
+        padding: 2%;  text-align: center;
+      }
+      .mission h1{
+        font-family: 'mainFont', sans-serif;
+        font-weight: bold;
+        color:#935E47;
+      }
+      .mission p{
+        padding: 5%;
+        font-size: 175%;
+        font-weight:lighter;
+        font-family: 'mainFont', sans-serif;
+        text-align: center;
+        width: 57%;
+        margin: 0 auto;
+        color:#935E47;
+        }
+      .pageHead{
+
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        height: auto;
+
+      }
+      .goMobile{
+        font-size:100%;
+        cursor: pointer;
+        margin-top:1%;
+        border-radius: 15%;
+        color:white;
+        background-color:#29aae0;
+        float:right;
+        text-align:center;
+        padding:3%;
+      }
+      .mainLogo{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 45%;
+        width: 30%;
+        z-index: 100;
+      }
+      .store{
+        height: auto;
+        position: relative;
+      }
+      .store h1{
+
+      }
+      .productsSection{
+              position: absolute;
+              top: 10%;
+              left:50%;
+              width: 50%;
+
+              font-family: 'mainFont', sans-serif;
+              font-weight:lighter;
+      }
+
+      .productsSection h1{
+
+        font-family: 'mainFont', sans-serif;
+        font-weight:lighter;
+        color:white;
+        text-align: center;
+        z-index: 100;
+      }
+
+      .mainPackage{
+        margin: 0 auto;
+        width: 55%;
+          cursor:pointer;
+        background: rgba(255, 255, 255, 0.3);
+        height: 40%;
+      }
+      .mainPackage p{
+        font-size: 150%;
+        color:white;
+        text-align: center;
+        font-family: 'mainFont', sans-serif;
+        font-weight:lighter;
+        padding-top: 5%;
+      }
+      .singleProduct{
+        font-family: 'mainFont', sans-serif;
+        font-weight:lighter;
+        text-align: center;
+        color:#DAAD7D;
+        padding: 10%;
+
+      }
+      .singleProduct h1{
+        font-size: 450%;
+      }
+      .singleProduct table{
+        border-radius: 50%;
+        border-color: #DAAD7D;
+
+        border-style: solid;
+      }
+      .contactUs{
+        width: 100%;
+
+        background-color: #935E47;
+        color: white;
+          font-family: 'mainFont', sans-serif;
+          padding: 10%;
+          text-align: center;
+      }
+      .contactUs h1{
+
+      }
+      .ending{
+        background-color: #935E47;
+        color: black;
+        font-family: 'mainFont', sans-serif;
+        padding: 2%;
+        bottom: 2%;
+      }
+      .ending p {
+        font-size: 80%;
+        padding: 1%;
+      }
+      .bg{
+        height: 100%;
+        background-image:url("assets/background.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .store{
+        height: 100%;
+        position: relative;
+        background-image:url("assets/seconded.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+      .row{
+        width:100%;padding:10%;
+      }
+      .singleProduct td{
+        text-align:left;padding: 3%;font-size:150%;width:80%;border-right:solid
+      }
+      input{
+        width:50%;padding: 2%; border: none; border-color: transparent;
+      }
+      .contactUs button{
+        cursor:pointer;
+        background-color:#40565F;
+        border:none;
+        border-radius:3%;
+        width:25%;
+        padding:2%;
+        color:white;
+      }
+      textarea{
+        width:50%;
+        padding: 2%;
+        border: none;
+        border-color: transparent;
+
+      }
+
+      .circle {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size:150%;
+        color: #29aae0;
+        line-height: 50px;
+        text-align: center;
+        float:right;
+        background: #fff;
+        border:solid;
+        border-color:#29aae0;
+        border-width:1px;
+      }
+      .invertedcircle{
+
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size:150%;
+        color: #fff;
+        line-height: 25px;
+        text-align: center;
+        float:right;
+        background: #29aae0;
+      }
+      .ending i{
+        cursor:pointer;
+        display:inline;
+      }
+      .ending p {
+        display:inline;
+      }
+      .col-md-6{
+        background: rgba(255, 255, 255, 0.3);color:white;padding:10%;font-size:100;
+      }
+      a{
+            text-decoration: none;
+        }
+        a:link {
+      text-decoration: none;
+        }
+
+        a:visited {
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        a:active {
+          text-decoration: underline;
+        }
+      html, body{
+        margin: 0 0;
+        padding: 0;
+      }
+      @media (max-width: 700px) {
+        .mainLogo{
+          width: 70%;
+        }
+        .goMobile{
+          font-size:70;
+          padding:2%;
+        }
+        .mission p{
+          font-size: 150%;
+          margin:0 0;
+        width: 100%;
+        }
+        .mission{
+          padding: 10%;
+        }
+        .productsSection{
+          width: 100%;
+          top:0;
+          left:0;
+        }
+        .productsSection h1{
+          padding: 10%;
+        }
+
+        .mainPackage{
+          width: 70%;
+          margin:0 auto;
+        }
+
+        .row{
+          padding: 0;
+          width: 100%;
+          margin:0;
+        }
+        .col-md-6{
+
+          margin:1% 1% 1% 1%;
+          padding: 3%;
+        }
+        .circle {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          font-size:120%;
+          color: #29aae0;
+          line-height: 23px;
+          text-align: center;
+          float:right;
+          background: #fff;
+          border:solid;
+          border-color:#29aae0;
+          border-width:1px;
+        }
+        .invertedcircle{
+
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          font-size:120%;
+          color: #fff;
+          line-height: 25px;
+          text-align: center;
+          float:right;
+          background: #29aae0;
+        }
+        .contactUs input{
+          width: 80%;
+        }
+        .contactUs textarea{
+        width: 80%;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .mainLogo{
+          width: 60%;
+        }.circle {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          font-size:150%;
+          color: #29aae0;
+          line-height: 23px;
+          text-align: center;
+          float:right;
+          background: #fff;
+          border:solid;
+          border-color:#29aae0;
+          border-width:1px;
+        }
+        .invertedcircle{
+
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          font-size:150%;
+          color: #fff;
+          line-height: 25px;
+          text-align: center;
+          float:right;
+          background: #29aae0;
+        }
+        .mission p{
+          font-size: 100%;
+          margin: 0 0;
+          width: 100%;
+
+        }
+        .mission{
+          padding: 15%;
+        }
+        .productsSection{
+          width: 100%;
+          top:0;
+          left:0;
+        }
+        .productsSection h1{
+          padding: 10%;
+        }
+        .goMobile{
+          font-size:50%;
+        }
+        .mainPackage{
+          width: 90%;
+          margin:0 auto;
+        }
+        .row{
+          width: 100%;
+          margin:0;
+        }
+        .col-md-6{
+          width: 80%;
+          margin:2% auto;
+        }
+        .singleProduct{
+          padding-left: 1%;
+          padding-right: 1%;
+        }
+
+        .singleProduct h1{
+          font-size: 300%;
+        }
+        .singleProduct table{
+          width: 100%;
+          border-width: 1px;
+          border:none;
+          margin:0;
+          font-size: 70%;
+        }
+        .singleProduct tr{
+          border-width: 1px;
+        }
+        .singleProduct td{
+          border-width: 1px;
+          border-right:solid;
+          border-right-width:1px;
+          border-bottom-width:1px;
+        }
+        .contactUs input{
+          width: 100%;
+
+        }
+        .contactUs h1{
+          font-size: 200%;
+        }
+        .contactUs textarea{
+          width:100%;
+        }
+        .contactUs button{
+          width: 70%;
+
+          margin:0;
+        }
+      }
+
+      </style>
+
+</head>
+<body onload="start()">
+  <div class="store">
+    <div class="productsSection">
+      <h1>Our Packages</h1>
+      <hr style="width:50%" />
+      <a style="text-decoration:none;" href="https://portal.veinternational.org/buybuttons/us01102/btn/gold-package-002/">
+      <div class="mainPackage">
+
+        <p>
+          Our Recommendation for You
+        </p>
+        <img src="assets/appicon.png" style="padding:1%;text-align:center;display: block;  margin-left: auto;margin-right: auto;margin:0 auto;width:30%"/>
+        <p style="font-size:100%; padding:1%">
+        1 App + 1 year Maintenance
+        </p>
+        <p style="font-size:100%; padding:0;">
+          $150,000
+        </p>
+      </div>
+      </a>
+    </div>
+    </div>
+<div class="singleProduct">
+      <h1>Too Pricey? Thats Okay</h1>
+      <p>
+        Buy one of our products individually
+      </p>
+      <div>
+        <table style="width:100%;">
+          <tr style="padding: 5%;">
+            <td style="width:80%;border:none;">
+            </td>
+            <td style="font-size:140%;border:none;">
+              Price
+            </td>
+          </tr>
+          <tr  style="border-bottom:solid">
+            <td style="">
+              V+ MemberShip
+
+            </td>
+            <td style="font-size:140%">
+              $300
+            </td>
+          </tr>
+          <tr style="border-bottom:solid">
+            <td style="">
+             Maintenance
+              <div id="m"class="circle">+</div>
+            </td>
+            <td style="font-size:140%">
+              $30,000
+            </td>
+          </tr>
+          <tr style="border-bottom:solid">
+            <td style="">
+            1 Large Ad
+            <div id="lgad"class="circle">+</div>
+            </td>
+            <td style="font-size:140%">
+              $50,000
+            </td>
+          </tr>
+          <tr style="border-bottom:solid">
+            <td style="">
+              1 Medium Ad
+              <div id="mead">+</div>
+            </td>
+            <td style="font-size:140%">
+              $30,000
+            </td>
+          </tr>
+          <tr style="border-bottom:solid">
+            <td style="">
+             1 Small Ad
+             <div id="smad"class="circle">+</div>
+
+            </td>
+            <td style="font-size:140%">
+              $15,000
+
+            </td>
+
+          </tr>
+          <tr style="border-bottom:solid">
+            <td style="text-align:left;padding: 3%;font-size:150%;width:80%;border-right:solid">
+            1 App
+            <div id="app"class="circle">+</div>
+
+            </td>
+            <td style="font-size:140%">
+              $150,000
+
+            </td>
+
+          </tr>
+          <tr style="">
+            <td style="text-align:right;padding: 3%;font-size:150%;width:80%;border-right:solid">
+              Total
+
+            </td>
+            <td style="font-size:140%">
+              <p id="total"></p>
+
+            </td>
+
+          </tr>
+        </table>
+        <div class="goMobile" onclick="gotothings()">Go Mobile</div>
+
+
+
+
+      </div>
+
+  </div>
+</body>
+</html>

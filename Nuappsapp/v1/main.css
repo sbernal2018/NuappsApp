@@ -1,0 +1,340 @@
+* {
+    margin: 0 !important;
+    padding: 0;
+    border: 0;
+
+}
+@font-face {
+    font-family: "Helvetica";
+    src: url(Helvetica-01.ttf) format("truetype");
+}
+body{
+    background-image: url(websiteblue.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.missionStatementOuter{
+    background-color:#414456;
+
+    height: 35vh;
+    width: 100%;
+
+}
+
+.missionStatementInner{
+    font-family: 'Work Sans', sans-serif;
+
+    color: #414456;
+    background-image: url("nuapps.jpg");
+    height: 28vh;
+
+    font-weight: 300;
+    border-color: #6acee8;
+    border-style: solid;
+    border-top-width: 1vh;
+    border-bottom-width: 1vh;
+}
+.missionStatementInner h1{
+    padding: 3%;
+    font-weight: 200;
+
+    text-align: center;
+}
+.missionStatementInner p{
+    text-align: center;
+    padding: 0 8%;
+    text
+}
+
+.appShowcase{
+    font-family: 'Work Sans', sans-serif;
+    color: #29aae0;
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    border-bottom-width: 2vh;
+    font-weight: 300;
+}
+
+.appShowcase h1{
+
+    font-weight: 200;
+    padding: 1%;
+    text-align: center;
+    border-bottom-width: 1px;
+
+    margin: 0 20%;
+}
+
+.card{
+    width: 16vw;
+    max-width: 30vh;
+    padding-top: 3vh;
+}
+
+#top,
+#bottom {
+    left: 0;
+    right: 0;
+    height: 50%;
+}
+
+#top {
+    top: 0;
+    background-color: #fefefe ;
+    font-family: 'Work Sans', sans-serif;
+    color:#29aae0;
+
+    padding-bottom:30px;
+}
+
+#bottom {
+    bottom: 0;
+    background-color: #fefefe ;
+    font-family: 'Work Sans', sans-serif;
+    color:#29aae0 ;
+    padding: 3% 2%;
+}
+#bottom p{
+
+    text-align: center;
+}
+.center-block{ /*For logo*/
+    margin: 14em auto 0 auto !important;
+    margin-top: 40vh !important;
+    display: block;
+    max-width: 40vw;
+}
+
+.arrow{ /*For scroll down button*/
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 13vh !important;
+    max-width: 4vw !important;
+}
+
+#duration1{ /*For Logo*/
+    -webkit-animation-duration: 1s;
+}
+
+#duration2{ /*For Make Your Global Message*/
+    -webkit-animation-delay: 1.2s;
+    -webkit-animation-duration: 1s;
+}
+
+.duration3{ /*For scroll down button*/
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 5s;
+}
+
+.img-responsive {
+    margin: 0 auto !important;
+}
+
+.mym{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.msg{
+    font-family: 'Varela Round', sans-serif;
+    color: white !important;
+    text-align: center !important;
+
+}
+.CU{
+    background-color: #20aae0;
+    color: #fefefe;
+    font-family: 'Work Sans', sans-serif;
+    text-align:center !important;
+}
+.pageHead{
+    padding-bottom: 36vh !important;
+}
+#Products{
+    width:100%;
+    height:180vh;
+}
+
+.Products{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    width:100%;
+    height: 20%;
+    padding: 7% 3%;
+    background-color: #29aae0;
+
+    border-style: solid;
+    color: #fefefe;
+}
+.Products h1{
+
+
+}
+.Products h2{
+  font-weight: 200;
+
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+.Products img{
+    width: 80%;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #fefefe;
+}
+.Products p{
+
+    padding-bottom: 10vh;
+}
+.mySlides{
+    clear: both !important;
+    width: 50%;
+    float: left !important;
+    padding-left: 10% !important;
+}
+
+.topnav {
+
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 500;
+    width: 100%;
+
+}
+@media screen and (max-width: 600px){
+
+     .col-md-4{
+	       padding-bottom: 1%s;
+	     }
+
+	     .Products h2{
+
+	         padding-bottom: 4%;
+         padding-top:1%;
+
+     }
+
+     .Products p{
+
+         padding-bottom: 5%;
+	     }
+
+	      .container-fluid h2{
+
+	      }
+
+	      .container-fluid p{
+
+
+	      }
+
+  #message{
+padding:50%;
+	      }
+        .bottom p{
+
+        }
+        .bottom h2{
+
+        }
+	  }
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+
+    text-align: center;
+    padding: 0.7vh 5vw;
+    text-decoration: none;
+
+    padding: 3%;
+    width: 100%;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #6eb9d8;
+    color: #F4F4F4;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav div {display: none;}
+
+  .topnav a.icon {
+    float: left;
+    text-align: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+
+
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fefefe;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+.fixed{
+    width: 100%;
+
+    position: fixed !important;
+    top: 0;
+}
