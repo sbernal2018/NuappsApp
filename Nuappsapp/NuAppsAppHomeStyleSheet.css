@@ -21,16 +21,14 @@ div{
 #swipe{
   width:2.5em;
   height:3em;
-  
-  
-  
+
 }
 
 
 
 
 
-.button {
+.button {   
   position: relative;
   background-color: #87CEFA;
   border: none;
@@ -40,18 +38,18 @@ div{
   width: 200px;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  /*transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   outline:none;
   margin-bottom:1em;
 
-  
+*/  
 }
 
 
-
+/*
 .button:after {
   content: "";
   background: transparent;
@@ -71,16 +69,12 @@ div{
   opacity: 1;
   transition: 0s
 }
+*/
 
 .spin {
     margin-top:40vh;
 
-    
-
-    
-
-    
-
+  
 }
 
 
