@@ -26,7 +26,7 @@ div{
 
 }
 #slogan{
-  
+
 }
 
 
@@ -43,18 +43,22 @@ div{
   width: 200px;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  /*transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   outline:none;
   margin-bottom:1em;
 
+<<<<<<< HEAD
 
+=======
+*/
+>>>>>>> 90b1819b3cd611ab38e122c96fbd34d7da265bed
 }
 
 
-
+/*
 .button:after {
   content: "";
   background: transparent;
@@ -74,13 +78,19 @@ div{
   opacity: 1;
   transition: 0s
 }
+*/
 
 .spin {
     margin-top:40vh;
 
+<<<<<<< HEAD
 
 
 
+=======
+
+}
+>>>>>>> 90b1819b3cd611ab38e122c96fbd34d7da265bed
 
 
 
