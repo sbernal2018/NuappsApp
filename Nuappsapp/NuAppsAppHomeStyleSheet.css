@@ -3,7 +3,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  overflow:hidden;
+  /*overflow:hidden;*/
 
 }
 
@@ -50,11 +50,7 @@ div{
   outline:none;
   margin-bottom:1em;
 
-<<<<<<< HEAD
-
-=======
 */
->>>>>>> 90b1819b3cd611ab38e122c96fbd34d7da265bed
 }
 
 
@@ -83,14 +79,8 @@ div{
 .spin {
     margin-top:40vh;
 
-<<<<<<< HEAD
-
-
-
-=======
 
 }
->>>>>>> 90b1819b3cd611ab38e122c96fbd34d7da265bed
 
 
 

@@ -25,7 +25,8 @@
          <script src="https://use.fontawesome.com/d4610f059e.js"></script>
           <script>
 
-             var md=false;
+            var md=false;
+            var vplus=false;
             var lg=false;var sm=false;
             var m=false;
             var vm =false;
@@ -38,6 +39,7 @@
             $(".store").attr('style','max-width:'+$(window).width()+'px;height:'+$(window).height() +'px;');
 
                $("#mead").addClass("circle");
+               $("#v+").addClass("circle");
                $('#lgad').addClass("circle");
                $('#m').addClass("circle");
                $('#app').addClass("circle");
@@ -64,6 +66,32 @@
             }
 
           });
+
+
+
+
+          /*v+ button**********************************************************************************/
+          $('#v+').click( function() {
+
+            if(!vplus){
+            $('#v+').removeClass();
+            $("#v+").addClass("invertedcircle");
+              total+=300;
+                    $('#total').html("$"+total);
+              vplus=true;
+            }else{
+              $('#v+').removeClass();
+            $("#v++").addClass("circle");
+            total-=300;
+                  $('#total').html("$"+total);
+            vplus=false;
+            }
+
+          });
+          /*//////////////////////////////////////////////////////////////////////////////*/
+
+
+
             $('#lgad').click( function() {
 
              if(!lg){
@@ -331,13 +359,14 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
+
+
       .store{
-        height: 100%;
-        position: relative;
+      
         background-image:url("assets/seconded.png");
-        background-position: center;
-        background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
 
       }
       .row{
@@ -647,10 +676,11 @@
           </tr>
           <tr  style="border-bottom:solid">
             <td style="">
-              V+ MemberShip
+              V+ Membership
+              <div id="v+" class="circle">+</div>
 
             </td>
-            <td style="font-size:140%">
+            <td style="font-size:140%; text-align:center;">
               $300
             </td>
           </tr>
