@@ -362,7 +362,7 @@
 
 
       .store{
-      
+
         background-image:url("assets/seconded.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -636,7 +636,11 @@
       }
 
       </style>
-
+      <script>
+      function goBack() {
+          window.history.back();
+      }
+      </script>
 </head>
 <body onload="start()">
   <div class="store">
@@ -755,5 +759,6 @@
       </div>
 
   </div>
+  <img src="assets/backbutton.png" onclick="goBack()"style="max-width: 15%" >
 </body>
 </html>

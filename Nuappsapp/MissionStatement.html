@@ -607,7 +607,11 @@
       }
 
       </style>
-
+      <script>
+      function goBack() {
+          window.history.back();
+      }
+      </script>
 </head>
 <body onload="start()">
   <div class="mission">
@@ -617,5 +621,6 @@
       It is Nüapps’ mission to offer mobile app solutions that are needed by all companies that seek a global reach, in order to achieve success in the modern technological world.
     </p>
   </div>
+  <img src="assets/backbutton.png" onclick="goBack()"style="max-width: 15%" >
 </body>
 </html>

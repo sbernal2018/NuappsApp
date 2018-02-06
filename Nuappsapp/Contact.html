@@ -607,7 +607,11 @@
       }
 
       </style>
-
+      <script>
+      function goBack() {
+          window.history.back();
+      }
+      </script>
 </head>
 <body onload="start()">
   <div class="contactUs">
@@ -648,7 +652,8 @@
               src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
     </center>
-
+  </br>
+<img src="assets/backbutton.png" onclick="goBack()"style="max-width: 15%" >
   </div>
 
   <div class="ending">
