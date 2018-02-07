@@ -622,7 +622,11 @@
       }
 
       </style>
-
+      <script>
+      function goBack() {
+          window.history.back();
+      }
+      </script>
 </head>
 <body onload="start()">
   <div class="AppsSection">
@@ -647,5 +651,6 @@
     <p>Nushot is a first person virtual reality video game that centers around shooting stray asteroids that approach you.</p6>
   </div>
 </div>
+<img src="assets/backbutton.png" onclick="goBack()"style="max-width: 15%" >
 </body>
 </html>
