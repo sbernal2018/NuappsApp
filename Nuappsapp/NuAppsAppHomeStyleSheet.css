@@ -7,10 +7,15 @@ body{
 
 }
 
+
+.animated fadeInUp{
+  animation-delay: 1s;
+}
+
 div{
   height: auto;
   text-align: center;
-
+  
 }
 
 #first{
@@ -20,25 +25,26 @@ div{
 
 #swipe{
   width:2.5em;
-  height:3em;
+  height:4em;
 
-
-
-}
-#slogan{
+  margin-top:7em;
 
 }
+
 
 
 
 
 
 .button {
+  color:black;
+
+  border-radius:4em;
+  border-color:white;
   position: relative;
-  background-color: #87CEFA;
+  background-color: white;
   border: none;
   font-size: 28px;
-  color: #FFFFFF;
   padding: 20px;
   width: 200px;
   text-align: center;
@@ -47,10 +53,9 @@ div{
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
-  outline:none;
+  outline:none;*/
   margin-bottom:1em;
 
-*/
 }
 
 
@@ -84,4 +89,4 @@ div{
 
 
 
-}
+
