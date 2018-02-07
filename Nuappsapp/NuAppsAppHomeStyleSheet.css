@@ -7,15 +7,20 @@ body{
 
 }
 
+#slogan{
+  animation-delay:1s;
+}
+
 
 .animated fadeInUp{
   animation-delay: 1s;
 }
 
+
 div{
   height: auto;
   text-align: center;
-  
+
 }
 
 #first{
@@ -26,13 +31,10 @@ div{
 #swipe{
   width:2.5em;
   height:4em;
-
+  animation-delay:2.5s;
   margin-top:7em;
 
 }
-
-
-
 
 
 
@@ -48,43 +50,13 @@ div{
   padding: 20px;
   width: 200px;
   text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  /*transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-  outline:none;*/
-  margin-bottom:1em;
-
+  margin-bottom:2em;
 }
 
-
-/*
-.button:after {
-  content: "";
-  background: transparent;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px!important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s
-}
-
-.button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-*/
 
 .spin {
     margin-top:40vh;
-
-
+    
 }
 
 
