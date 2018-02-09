@@ -13,7 +13,16 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, , maximum-scale=1, user-scalable=no">
   <link href="hover.css" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+     <script>
+         $(document).ready(function (){
+             $(".click").click(function (){
+                 $('html, body').animate({
+                     scrollTop: $("#div1").offset().top
+                 }, 2000);
+             });
+         });
+     </script>
 </head>
 
 <body>
@@ -23,7 +32,7 @@
   <img id="slogan" class="animated fadeInDown" style="max-width: 90%" src="assets/Nuapps Slogan 2017-2018.png">
   </center>
 
-  <center>  <img id="swipe" src="assets/swipeup.png" class="animated fadeInUp" />
+  <center>  <img id="swipe"  src="assets/swipeup.png" class="animated fadeInUp click" />
   </center>
 
       <div id="hide_this" class="container-fluid">
@@ -60,6 +69,7 @@
         </div>
 
     </div>
+    <div id="div1"></div1>
 
 
 </body>
