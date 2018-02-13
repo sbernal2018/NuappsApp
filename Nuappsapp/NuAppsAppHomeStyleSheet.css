@@ -41,6 +41,15 @@ div{
     text-decoration: none;
     font-weight: lighter;
 }
+
+
+.a:active{
+  
+  text-decoration:none;
+
+}
+
+
 .button {
 
   border-color:white;
